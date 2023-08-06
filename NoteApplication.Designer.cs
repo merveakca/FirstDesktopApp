@@ -46,7 +46,7 @@
             // cbchose
             // 
             cbchose.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-            cbchose.BackColor = SystemColors.ActiveCaption;
+            cbchose.BackColor = SystemColors.ButtonFace;
             cbchose.ForeColor = SystemColors.ActiveCaptionText;
             cbchose.FormattingEnabled = true;
             cbchose.Items.AddRange(new object[] { "Hatırlatmalar", "Özel Günler", "Resmi Tatiller", "Toplantılar" });
@@ -59,7 +59,7 @@
             // 
             // txtNote
             // 
-            txtNote.Location = new Point(149, 381);
+            txtNote.Location = new Point(138, 381);
             txtNote.Multiline = true;
             txtNote.Name = "txtNote";
             txtNote.Size = new Size(860, 123);
@@ -77,7 +77,9 @@
             // 
             // btnSave
             // 
-            btnSave.BackColor = SystemColors.ButtonFace;
+            btnSave.BackColor = Color.Orchid;
+            btnSave.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSave.ForeColor = SystemColors.ButtonHighlight;
             btnSave.Location = new Point(1015, 439);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(170, 65);
@@ -96,7 +98,9 @@
             // 
             // button1
             // 
-            button1.BackColor = SystemColors.ButtonFace;
+            button1.BackColor = Color.Orchid;
+            button1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = SystemColors.ButtonHighlight;
             button1.Location = new Point(1015, 972);
             button1.Name = "button1";
             button1.Size = new Size(170, 65);
@@ -106,7 +110,10 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(512, 225);
+            dateTimePicker1.CalendarForeColor = SystemColors.ActiveCaptionText;
+            dateTimePicker1.CalendarMonthBackground = Color.LightGoldenrodYellow;
+            dateTimePicker1.CalendarTitleBackColor = Color.BlueViolet;
+            dateTimePicker1.Location = new Point(501, 225);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.ShowCheckBox = true;
             dateTimePicker1.ShowUpDown = true;
@@ -163,6 +170,7 @@
             // 
             AutoScaleDimensions = new SizeF(18F, 45F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightPink;
             ClientSize = new Size(1422, 1134);
             Controls.Add(label4);
             Controls.Add(label3);
