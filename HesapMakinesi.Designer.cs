@@ -77,7 +77,7 @@
             // btnZero
             // 
             btnZero.Font = new Font("Times New Roman", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btnZero.Location = new Point(9, 331);
+            btnZero.Location = new Point(9, 340);
             btnZero.Name = "btnZero";
             btnZero.Size = new Size(546, 72);
             btnZero.TabIndex = 13;
@@ -87,46 +87,50 @@
             // 
             // btnDivision
             // 
+            btnDivision.BackColor = SystemColors.ActiveCaption;
             btnDivision.Font = new Font("Times New Roman", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnDivision.Location = new Point(616, 312);
             btnDivision.Name = "btnDivision";
             btnDivision.Size = new Size(129, 91);
             btnDivision.TabIndex = 12;
             btnDivision.Text = "/";
-            btnDivision.UseVisualStyleBackColor = true;
+            btnDivision.UseVisualStyleBackColor = false;
             btnDivision.Click += btnDivision_Click;
             // 
             // btnMultiply
             // 
+            btnMultiply.BackColor = SystemColors.ActiveCaption;
             btnMultiply.Font = new Font("Times New Roman", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnMultiply.Location = new Point(616, 224);
             btnMultiply.Name = "btnMultiply";
             btnMultiply.Size = new Size(129, 91);
             btnMultiply.TabIndex = 11;
             btnMultiply.Text = "*";
-            btnMultiply.UseVisualStyleBackColor = true;
+            btnMultiply.UseVisualStyleBackColor = false;
             btnMultiply.Click += btnMultiply_Click;
             // 
             // btnMinus
             // 
+            btnMinus.BackColor = SystemColors.ActiveCaption;
             btnMinus.Font = new Font("Times New Roman", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnMinus.Location = new Point(616, 120);
             btnMinus.Name = "btnMinus";
             btnMinus.Size = new Size(129, 106);
             btnMinus.TabIndex = 10;
             btnMinus.Text = "-";
-            btnMinus.UseVisualStyleBackColor = true;
+            btnMinus.UseVisualStyleBackColor = false;
             btnMinus.Click += btnMinus_Click;
             // 
             // btnPlus
             // 
+            btnPlus.BackColor = SystemColors.ActiveCaption;
             btnPlus.Font = new Font("Times New Roman", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
             btnPlus.Location = new Point(616, 22);
             btnPlus.Name = "btnPlus";
             btnPlus.Size = new Size(129, 106);
             btnPlus.TabIndex = 9;
             btnPlus.Text = "+";
-            btnPlus.UseVisualStyleBackColor = true;
+            btnPlus.UseVisualStyleBackColor = false;
             btnPlus.Click += btnPlus_Click;
             // 
             // btnNine
@@ -242,7 +246,7 @@
             // 
             // lbOperations
             // 
-            lbOperations.Font = new Font("Times New Roman", 32.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lbOperations.Font = new Font("Times New Roman", 16F, FontStyle.Regular, GraphicsUnit.Point);
             lbOperations.Location = new Point(9, 164);
             lbOperations.Name = "lbOperations";
             lbOperations.Size = new Size(723, 49);
@@ -251,10 +255,10 @@
             // 
             // btnReset
             // 
-            btnReset.Font = new Font("Times New Roman", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnReset.Font = new Font("Times New Roman", 16F, FontStyle.Regular, GraphicsUnit.Point);
             btnReset.Location = new Point(622, 19);
             btnReset.Name = "btnReset";
-            btnReset.Size = new Size(123, 57);
+            btnReset.Size = new Size(123, 69);
             btnReset.TabIndex = 14;
             btnReset.Text = "Reset";
             btnReset.UseVisualStyleBackColor = true;
@@ -262,7 +266,7 @@
             // 
             // lbResult
             // 
-            lbResult.Font = new Font("Times New Roman", 32.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lbResult.Font = new Font("Times New Roman", 16F, FontStyle.Regular, GraphicsUnit.Point);
             lbResult.Location = new Point(9, 91);
             lbResult.Name = "lbResult";
             lbResult.Size = new Size(723, 49);
@@ -274,14 +278,14 @@
             txtProgress.Font = new Font("Times New Roman", 32.25F, FontStyle.Regular, GraphicsUnit.Point);
             txtProgress.Location = new Point(9, 19);
             txtProgress.Name = "txtProgress";
-            txtProgress.Size = new Size(611, 57);
+            txtProgress.Size = new Size(611, 82);
             txtProgress.TabIndex = 0;
             txtProgress.TextChanged += txtProgress_TextChanged;
             txtProgress.KeyPress += txtProgress_KeyPress;
             // 
             // HesapMakinesi
             // 
-            AutoScaleDimensions = new SizeF(12F, 23F);
+            AutoScaleDimensions = new SizeF(18F, 36F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(787, 694);
             Controls.Add(groupBox2);

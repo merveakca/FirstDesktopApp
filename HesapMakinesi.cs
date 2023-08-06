@@ -76,7 +76,7 @@ public partial class HesapMakinesi : Form
 
     private void btnPlus_Click(object sender, EventArgs e)
     {
-        if(txtProgress.Text != "")
+        if (txtProgress.Text != "")
         {
             if (operations == "")
             {
@@ -89,7 +89,7 @@ public partial class HesapMakinesi : Form
 
             lbOperations.Text = "İşlemler: " + operations;
         }
-        
+
 
         decimal txtNumber = txtProgress.Text == "" ? 0 : Convert.ToDecimal(txtProgress.Text);
         number = number + txtNumber;
@@ -171,23 +171,24 @@ public partial class HesapMakinesi : Form
         if (!Char.IsDigit(ch))
         {
             e.Handled = true;
-        }        
+        }
 
-        if(ch == '+')
+        if (ch == '+')
         {
             e.Handled = true;
             btnPlus_Click(sender, e);
         }
-        else if(ch == '-')
+        else if (ch == '-')
         {
             e.Handled = true;
             btnMinus_Click(sender, e);
         }
-        else if(ch == '*')
+        else if (ch == '*')
         {
             e.Handled = true;
             btnMultiply_Click(sender, e);
-        }else if(ch == '/')
+        }
+        else if (ch == '/')
         {
             e.Handled = true;
             btnDivision_Click(sender, e);

@@ -6,7 +6,7 @@ namespace FirstDesktopApp
         static void Main()
         {            
             ApplicationConfiguration.Initialize();
-            Application.Run(new HesapMakinesi());
+            Application.Run(new NoteApplication());
         }
     }
 }

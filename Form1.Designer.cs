@@ -49,7 +49,7 @@
             // 
             btnSave.Location = new Point(65, 104);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(256, 47);
+            btnSave.Size = new Size(256, 59);
             btnSave.TabIndex = 1;
             btnSave.Text = "Kaydet";
             btnSave.UseVisualStyleBackColor = true;
