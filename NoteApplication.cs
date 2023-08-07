@@ -17,34 +17,20 @@ namespace FirstDesktopApp
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void f(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSave_Click(object sender, EventArgs e)
         {
-
+            var title = txtTitle.Text;
+            var date = dtNoteDate.Value;
+            var category = cbchose.SelectedItem;
+            var note = txtNote.Text;
+            string result = date + " " + title + " " + category + " " + note;
+            lbNotes.Items.Add(result);
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void btnDelete_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void NoteApplication_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
+            var selectedItem = lbNotes.SelectedItem;
+            lbNotes.Items.Remove(selectedItem);
         }
     }
 }
