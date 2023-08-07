@@ -21,10 +21,14 @@ namespace FirstDesktopApp
         {
             var title = txtTitle.Text;
             var date = dtNoteDate.Value;
-            var category = cbchose.SelectedItem;
+            var category = cbChose.SelectedItem;
             var note = txtNote.Text;
-            string result = date + " " + title + " " + category + " " + note;
+            string result = date + "-" + title + "-" + category + "-" + note;
             lbNotes.Items.Add(result);
+            txtTitle.Text = "";
+            dtNoteDate.Value = DateTime.Now;
+            cbChose.SelectedIndex = 0;
+            txtNote.Text = "";
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
