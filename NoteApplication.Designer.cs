@@ -50,40 +50,41 @@
             cbChose.ForeColor = SystemColors.ActiveCaptionText;
             cbChose.FormattingEnabled = true;
             cbChose.Items.AddRange(new object[] { "Hatırlatmalar", "Özel Günler", "Resmi Tatiller", "Toplantılar" });
-            cbChose.Location = new Point(18, 174);
+            cbChose.Location = new Point(93, 294);
+            cbChose.Margin = new Padding(6, 4, 6, 4);
             cbChose.Name = "cbChose";
-            cbChose.Size = new Size(235, 40);
+            cbChose.Size = new Size(394, 62);
             cbChose.TabIndex = 0;
             cbChose.Text = "Seçiniz";
             // 
             // txtNote
             // 
-            txtNote.Location = new Point(16, 308);
-            txtNote.Margin = new Padding(2, 3, 2, 3);
+            txtNote.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            txtNote.Location = new Point(93, 520);
+            txtNote.Margin = new Padding(3, 4, 3, 4);
             txtNote.Multiline = true;
             txtNote.Name = "txtNote";
-            txtNote.Size = new Size(622, 88);
+            txtNote.Size = new Size(1050, 146);
             txtNote.TabIndex = 1;
             // 
             // lblNotes
             // 
             lblNotes.AutoSize = true;
-            lblNotes.Location = new Point(40, 408);
-            lblNotes.Margin = new Padding(2, 0, 2, 0);
+            lblNotes.Location = new Point(93, 719);
             lblNotes.Name = "lblNotes";
-            lblNotes.Size = new Size(107, 32);
+            lblNotes.Size = new Size(178, 54);
             lblNotes.TabIndex = 2;
             lblNotes.Text = "Notlarım";
             // 
             // btnSave
             // 
             btnSave.BackColor = Color.Orchid;
-            btnSave.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSave.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             btnSave.ForeColor = SystemColors.ButtonHighlight;
-            btnSave.Location = new Point(643, 327);
-            btnSave.Margin = new Padding(2, 3, 2, 3);
+            btnSave.Location = new Point(1149, 588);
+            btnSave.Margin = new Padding(3, 4, 3, 4);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(85, 46);
+            btnSave.Size = new Size(144, 78);
             btnSave.TabIndex = 5;
             btnSave.Text = "Ekle";
             btnSave.UseVisualStyleBackColor = false;
@@ -92,12 +93,12 @@
             // btnDelete
             // 
             btnDelete.BackColor = Color.Orchid;
-            btnDelete.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDelete.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             btnDelete.ForeColor = SystemColors.ButtonHighlight;
-            btnDelete.Location = new Point(922, 655);
-            btnDelete.Margin = new Padding(2, 3, 2, 3);
+            btnDelete.Location = new Point(1621, 1135);
+            btnDelete.Margin = new Padding(3, 4, 3, 4);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(85, 46);
+            btnDelete.Size = new Size(144, 78);
             btnDelete.TabIndex = 7;
             btnDelete.Text = "Sil";
             btnDelete.UseVisualStyleBackColor = false;
@@ -108,82 +109,77 @@
             dtNoteDate.CalendarForeColor = SystemColors.ActiveCaptionText;
             dtNoteDate.CalendarMonthBackground = Color.LightGoldenrodYellow;
             dtNoteDate.CalendarTitleBackColor = Color.BlueViolet;
-            dtNoteDate.Enabled = false;
-            dtNoteDate.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dtNoteDate.Location = new Point(348, 176);
-            dtNoteDate.Margin = new Padding(2, 3, 2, 3);
+            dtNoteDate.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            dtNoteDate.Location = new Point(905, 292);
+            dtNoteDate.Margin = new Padding(3, 4, 3, 4);
             dtNoteDate.Name = "dtNoteDate";
             dtNoteDate.ShowCheckBox = true;
             dtNoteDate.ShowUpDown = true;
-            dtNoteDate.Size = new Size(360, 39);
+            dtNoteDate.Size = new Size(672, 61);
             dtNoteDate.TabIndex = 9;
-            dtNoteDate.Value = new DateTime(2023, 8, 7, 2, 33, 4, 0);
+            dtNoteDate.Value = new DateTime(2023, 8, 7, 19, 43, 34, 0);
             // 
             // txtTitle
             // 
-            txtTitle.Location = new Point(16, 84);
-            txtTitle.Margin = new Padding(2, 3, 2, 3);
+            txtTitle.Location = new Point(93, 130);
+            txtTitle.Margin = new Padding(3, 4, 3, 4);
             txtTitle.Multiline = true;
             txtTitle.Name = "txtTitle";
-            txtTitle.Size = new Size(292, 45);
+            txtTitle.Size = new Size(491, 74);
             txtTitle.TabIndex = 10;
             // 
             // lblDateTime
             // 
             lblDateTime.AutoSize = true;
-            lblDateTime.Location = new Point(348, 139);
-            lblDateTime.Margin = new Padding(2, 0, 2, 0);
+            lblDateTime.Location = new Point(905, 234);
             lblDateTime.Name = "lblDateTime";
-            lblDateTime.Size = new Size(140, 32);
+            lblDateTime.Size = new Size(107, 54);
             lblDateTime.TabIndex = 11;
-            lblDateTime.Text = "Not Takvimi";
+            lblDateTime.Text = "Tarih";
             // 
             // lblCategory
             // 
             lblCategory.AutoSize = true;
-            lblCategory.Location = new Point(18, 139);
-            lblCategory.Margin = new Padding(2, 0, 2, 0);
+            lblCategory.Location = new Point(93, 236);
             lblCategory.Name = "lblCategory";
-            lblCategory.Size = new Size(166, 32);
+            lblCategory.Size = new Size(277, 54);
             lblCategory.TabIndex = 12;
             lblCategory.Text = "Not Kategorisi";
             // 
             // lblTitle
             // 
             lblTitle.AutoSize = true;
-            lblTitle.Location = new Point(18, 51);
-            lblTitle.Margin = new Padding(2, 0, 2, 0);
+            lblTitle.Location = new Point(93, 72);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(129, 32);
+            lblTitle.Size = new Size(215, 54);
             lblTitle.TabIndex = 13;
             lblTitle.Text = "Not Başlığı";
             // 
             // lblNote
             // 
             lblNote.AutoSize = true;
-            lblNote.Location = new Point(18, 250);
-            lblNote.Margin = new Padding(2, 0, 2, 0);
+            lblNote.Location = new Point(93, 462);
             lblNote.Name = "lblNote";
-            lblNote.Size = new Size(259, 32);
+            lblNote.Size = new Size(429, 54);
             lblNote.TabIndex = 14;
             lblNote.Text = "Notunuzu Oluşturunuz";
             // 
             // lbNotes
             // 
             lbNotes.FormattingEnabled = true;
-            lbNotes.ItemHeight = 32;
-            lbNotes.Location = new Point(16, 443);
-            lbNotes.Margin = new Padding(2, 3, 2, 3);
+            lbNotes.ItemHeight = 54;
+            lbNotes.Location = new Point(93, 777);
+            lbNotes.Margin = new Padding(3, 4, 3, 4);
             lbNotes.Name = "lbNotes";
-            lbNotes.Size = new Size(901, 260);
+            lbNotes.Size = new Size(1522, 436);
             lbNotes.TabIndex = 15;
             // 
             // NoteApplication
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(22F, 54F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightPink;
-            ClientSize = new Size(1027, 740);
+            ClientSize = new Size(1791, 1249);
             Controls.Add(lbNotes);
             Controls.Add(lblNote);
             Controls.Add(lblTitle);
@@ -196,7 +192,8 @@
             Controls.Add(lblNotes);
             Controls.Add(txtNote);
             Controls.Add(cbChose);
-            Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            Margin = new Padding(6, 4, 6, 4);
             Name = "NoteApplication";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "NoteApplication";
